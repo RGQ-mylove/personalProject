@@ -1,0 +1,26 @@
+.particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.particle-tooltip {
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--accent-cyan);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-shadow: 0 0 12px var(--accent-cyan);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.particle-tooltip.visible {
+  opacity: 1;
+}
